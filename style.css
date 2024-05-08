@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60vw;
+  height: 100vh;
+  background-color: #d2d2d2;
+  position: relative;
+  z-index: 1;
+}
+
+.box1 {
+  background-color: #000000;
+  height: 20vh;
+  width: 25vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .1rem;
+}
+
+.box1_hashtag {
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+}
+
+.box1_hashtag img {
+  max-width: 2vw;
+}
+
+.box1_titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  border: 2px solid #fff;
+  padding: 8px 10px
+}
+
+.box2 {
+  background-color: #ff5d00;
+  height: 20vh;
+  width: 20vw;
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  z-index: -1;
+}
+
+.box3 {
+  position: absolute;
+  top: 10%;
+  left: 38%;
+  z-index: -2;
+}
+
+.box3 img {
+  max-width: 25vw;
+}
+
+.box4 {
+  background-color: #fff;
+  height: 18vh;
+  width: 35vw;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: -2;
+}
+
+.box4_formulario {
+  width: 22vw;
+}
+
+.box4_formulario form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 1rem;
+  margin-top: 2rem;
+  margin-left: 2.3rem;
+}
+
+.box4_formulario .input-container {
+  position: relative;
+}
+
+.box4_formulario .input-container label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.3rem;
+  color: #d2d2d2;
+  font-size: .9rem;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.box4_formulario .input-container input:focus+label,
+.box4_formulario .input-container input:valid+label {
+  top: -1rem;
+  font-weight: 500;
+  color: #ff5d00;
+  letter-spacing: 1px;
+}
+
+.box4_formulario .input-container input {
+  width: 9.5rem;
+  padding: 5px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  font-size: .8rem;
+  transition: 0.3s;
+  outline: none;
+}
+
+.box4_formulario .input-container input:focus,
+.box4_formulario .input-container input:valid {
+  border-color: #ff5d00;
+}
+
+.box4_formulario #btn_add {
+  outline: none;
+  height: 2rem;
+  text-align: center;
+  width: 8rem;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid black;
+  color: #000000;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover {
+    color: white;
+    background: #ff5d00;
+  }
+
+  &:active {
+    letter-spacing: 2px;
+  }
+}
+
+.box5 {
+  position: absolute;
+  top: 6%;
+  right: 3%;
+}
+
+.box5_mais {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.box5_mais img {
+  max-width: 2.8vw;
+}
+
+.box6 {
+  background-color: #000000;
+  height: 50vh;
+  width: 3.3vw;
+  position: absolute;
+  right: 0;
+  top: 25.1%;
+  z-index: -1;
+}
+
+.box7 {
+  background-color: #ff5d00;
+  height: 55vh;
+  width: 40vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.box8 {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+}
+
+.box_cards {
+  width: 50vw;
+  position: absolute;
+  top: 35%;
+  right: 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.card_contato {
+  display: flex;
+  flex-direction: column;
+  height: 18vh;
+  background-color: #fff;
+  border: 1.5px solid #000000;
+  box-shadow: 6px 6px 0 #000000;
+}
+
+.card_contato p {
+  height: 2rem;
+  align-items: center;
+  display: flex;
+  border-bottom: 1.5px solid #000000;
+  gap: .5rem;
+  font-size: 0.9rem;
+}
+
+.card_contato p i {
+  border-right: 1.5px solid #000000;
+  font-size: 1.2rem;
+  padding: 6.3px;
+}
+
+.card_contato .color_name {
+  background-color: #FFBA40;
+}
+.card_contato .btn_contato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3px;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.card_contato .btn_contato .bxs-edit-alt:hover{
+  color: rgb(88, 208, 142);
+  cursor: pointer;
+}
+
+.card_contato .btn_contato .bxs-message-alt-x:hover{
+  color: red;
+  cursor: pointer;
+}
